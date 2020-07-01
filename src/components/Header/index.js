@@ -9,7 +9,7 @@ class Header extends React.Component {
     render() {
         return (
             <div css={headerStyles.header}>
-                <h1>Rebecca Murray</h1>
+                <p>Rebecca<br></br>Murray</p>
             </div>
         );
     }

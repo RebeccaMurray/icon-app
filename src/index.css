@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #add8e6;
+  background-color: rgb(252, 247, 250);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -11,4 +11,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@font-face {
+  font-family: 'CabinSketch';
+  src: local('CabinSketch'), url(./fonts/CabinSketch-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: '101BlockLetterz';
+  src: local('101BlockLetterz'), url(./fonts/101BlockLetterz-XZYK.ttf) format('truetype');
 }
