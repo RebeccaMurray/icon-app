@@ -5,10 +5,42 @@ h1 {
 }
 
 img {
-  transition: transform 330ms ease-in-out;
+  /* transition: transform 330ms ease-in-out; */
+  align-self: center;
+  transition-duration: 2s;
+  transition-property: all;
   cursor: pointer;
 }
 
 img:hover {
   transform: translateY(-10px);
+}
+
+.grid {
+  width: 300px;
+  transition: all 1s;
+
+}
+
+.grid.is-viewing-section {
+  width: 600px;
+}
+
+.grid.is-viewing-section #grad {
+  order: 1;
+}
+.grid.is-viewing-section #github {
+  order: 2;
+}
+.grid.is-viewing-section #business {
+  order: 3;
+}
+.grid.is-viewing-section #linkedin {
+  order: 4;
+}
+.grid.is-viewing-section #resume {
+  order: 5;
+}
+.grid.is-viewing-section #email {
+  order: 6;
 }
