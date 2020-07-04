@@ -10,6 +10,7 @@ img {
   transition-duration: 2s;
   transition-property: all;
   cursor: pointer;
+  grid-column: span 2;
 }
 
 img:hover {
@@ -17,30 +18,27 @@ img:hover {
 }
 
 .grid {
-  width: 300px;
-  transition: all 1s;
-
-}
-
-.grid.is-viewing-section {
   width: 600px;
+  transition: all 1s;
+  display: grid;
+  grid-template-columns: repeat(14, 50px);
+
 }
 
-.grid.is-viewing-section #grad {
-  order: 1;
+/* .grid .is-viewing-section {
+  width: 600px;
+} */
+
+#blank-left {
+  grid-column: span 4;
+  grid-row: span 2;
 }
-.grid.is-viewing-section #github {
-  order: 2;
+
+.is-viewing-section > #blank-left {
+  grid-column: span 1;
 }
-.grid.is-viewing-section #business {
-  order: 3;
-}
-.grid.is-viewing-section #linkedin {
-  order: 4;
-}
-.grid.is-viewing-section #resume {
-  order: 5;
-}
-.grid.is-viewing-section #email {
-  order: 6;
+
+#blank-right {
+  grid-column: span 3 / end;
+  grid-row: 1 / auto / span 2;
 }
